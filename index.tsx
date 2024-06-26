@@ -1,5 +1,6 @@
 import { StyleSheet, Text, View, Image, ScrollView, TouchableOpacity } from 'react-native'
 import React from 'react';
+import styles from './src/Stylesheet';
 
 interface StylishListItemProps {
   leftImageUrl: string,
@@ -49,11 +50,6 @@ const StylishList = (props:StylishListProps) => {
                   <View>
                       {/* { props.checkboxContainsList ? (
                         // checkBox 
-                        // <CheckBox
-                        //   value={data.checkBoxStatus}
-                        //   onValueChange={null}
-                        //   style={styles.checkbox}
-                        // />
                         null
                       ) : (
                         null
@@ -69,13 +65,12 @@ const StylishList = (props:StylishListProps) => {
                                 uri: data.leftImageUrl
                               }}
                             />
-                            {/* <Icon name="user-circle" size={25} color="#000" /> */}
                           </View>
                         </View>
                       ) : null }
                   </View>
                   { data.itemDescription || data.itemColorCircle ? (
-                    //When there are title & description both
+                    //When there are title, description or color circles
                     <View style={styles.textContainer}>
                       <Text numberOfLines={1} style={styles.itemTitle}>{ data.itemTitle }</Text>
                       {data.itemDescription ? (<Text numberOfLines={1} ellipsizeMode="tail" style={styles.itemDescription}>{ data.itemDescription }</Text>) : null }
@@ -102,16 +97,14 @@ const StylishList = (props:StylishListProps) => {
                       </View>
                     ) : null }
 
-                    {/* Right Side Arrow */}
+                    {/* Right Side Image */}
                     {props.rightArrowVisibility ? (
                       <View style={styles.rightArrow}>
                         <Image
-                          // source={{
-                          //   uri: props.rightSideIcon
-                          // }}
-                          source={require('./assets/arrow-right-icon.png')}
+                          source={{
+                            uri: props.rightSideIcon
+                          }}
                         />
-                        {/* <Icon name="chevron-right" size={14} color="#000" /> */}
                       </View>
                     ) : null }
                  </View>
@@ -131,87 +124,3 @@ const StylishList = (props:StylishListProps) => {
 }
 
 export default StylishList
-
-const styles = StyleSheet.create({
-  heading: {
-    fontWeight: '600',
-    marginTop: 10,
-    marginLeft: 10
-  },
-  container: {
-    margin: 10
-  },
-  itemContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 15
-  },
-  iconContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 45,
-    width:45,
-    borderRadius: 20
-  },
-  itemTitle: {
-    marginLeft: 15,
-    fontSize: 16,
-    color: '#000000',
-    fontWeight: 'bold'
-  },
-  itemDescription: {
-    flex: 1,
-    marginLeft: 15,
-    marginRight: 15,
-    fontSize: 12,
-    color: '#9D9D9D'
-  },
-  rightArrow:{
-    justifyContent:'center',
-    height: 24,
-    width: 24,
-    marginRight: 15
-  },
-  leftImageIcon: {
-    height: 27,
-    width: 27
-  },
-  textContainer:{
-    flex: 1,
-    justifyContent:'center'
-  },
-  itemBoxBorder: {
-    borderWidth: 1,
-    borderRadius: 15,
-    padding: 10
-  },
-  circleColorContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    marginLeft: 15
-  },
-  itemCircleForColor:{
-    marginRight: 5,
-    marginTop: 5,
-    height: 15,
-    width: 15,
-    borderWidth: 1,
-    borderRadius: 10
-  },
-  rightSideText: {
-    flex: 1,
-    alignItems: 'flex-end',
-    justifyContent: 'center',
-    marginRight: 10
-  },
-  rightSideColumn:{
-    flex:1,
-    flexDirection:'row'
-  },
-  amountText:{
-    fontSize: 18,
-    fontWeight: 'bold'
-  }
-})
