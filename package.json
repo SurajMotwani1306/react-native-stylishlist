@@ -1,6 +1,6 @@
 {
   "name": "react-native-stylishlist",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Styling of list in context of better UI with less efforts",
   "main": "index.tsx",
   "scripts": {
@@ -11,7 +11,13 @@
     "url": "git+https://github.com/SurajMotwani1306/react-native-stylishlist.git"
   },
   "keywords": [
-    "react-native-stylishlist"
+    "react-native-stylishlist",
+    "react-native",
+    "react",
+    "list",
+    "react native list",
+    "javascript",
+    "typescript"
   ],
   "author": "Suraj Motwani",
   "license": "MIT",
