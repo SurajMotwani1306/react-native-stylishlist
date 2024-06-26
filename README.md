@@ -22,6 +22,12 @@ import StylishList from 'react-native-stylishlist';
 
 # Configuration - Props
 ```jsx
+
+const pressEventTrigger = (id : number, itemData: any) => {
+  console.warn(id);
+  console.warn(itemData);
+}
+
 const dataList = [
   {
     leftImageUrl: 'https://xyz.com/30017.png',
@@ -100,5 +106,5 @@ Suraj Motwani - Email: suraj.motwani1306@gmail.com
 
 ## License
 
-React Native Checkbox Flex is available under the MIT license. See the LICENSE file for more info.
+React Native Stylishlist is available under the MIT license. See the LICENSE file for more info.
 
