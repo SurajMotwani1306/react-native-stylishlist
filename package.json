@@ -1,0 +1,26 @@
+{
+  "name": "react-native-stylishlist",
+  "version": "1.0.3",
+  "description": "Styling of list in context of better UI with less efforts",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SurajMotwani1306/react-native-stylishlist.git"
+  },
+  "keywords": [
+    "react-native-stylishlist"
+  ],
+  "author": "Suraj Motwani",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "18.2.0",
+    "react-native": "0.74.2"
+  },
+  "bugs": {
+    "url": "https://github.com/SurajMotwani1306/react-native-stylishlist/issues"
+  },
+  "homepage": "https://github.com/SurajMotwani1306/react-native-stylishlist#readme"
+}
