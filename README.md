@@ -2,6 +2,20 @@
 
 Styling of list in context of better UI with less efforts - Increases re-usability.
 
+<table>
+  <tr>
+    <td align="center">
+      <img alt="React Native Stylish List"
+        src="assets/Screenshots/Example.png" />
+    </td>
+    <td align="center">
+      <img alt="React Native Stylish List"
+        src="assets/Screenshots/Options.gif" />
+        <p align="center">List of available options to modify Stylish List View with the help of below props.</p>
+    </td>
+   </tr>
+</table>
+
 ## Installation
 
 ```sh
@@ -91,7 +105,7 @@ const props = {
 | rightArrowVisibility                  |  boolean   |           false         | set flag to true to showcase right side image in item  |
 | rightSideIcon                         |   string   |            ''           | public url to showcase right side image                |
 | rightSideTextFlag                     |  boolean   |           false         | parent flag to showcase text/amount right side         |
-| leftImageBackgroundColor              |   string   |            ''           | background color for left side image circle            |
+| leftImageBackgroundColor              |   string   |            ''           | bg color for image circle, '' will make it transparent |
 | itemDescription                       |   string   |            ''           | Description for items                                  |
 | itemColorCircle                       |  string[]  |            []           | Add multiple colors for product variants               |
 | rightSideText                         |   string   |            ''           | Add text right side, Ex: $25                           |
