@@ -1,6 +1,6 @@
 {
   "name": "react-native-stylishlist",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Styling of list in context of better UI with less efforts",
   "main": "index.tsx",
   "scripts": {
