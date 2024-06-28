@@ -100,7 +100,7 @@ const props = {
 | headingSize                           |   number   |            12           | set heading size                                       |
 | belowLine                             |  boolean   |           false         | showcase horzontal line after every item in the list   |
 | itemBoxBorder                         |  boolean   |           false         | showcase bordered box for every item in the list       |
-| itemBoxBorderLeftHighlight            |   string   |            ''           | highlight left border of the box for styling           |
+| itemBoxBorderLeftHighlight            |  boolean   |           false         | highlight left border of the box for styling           |
 | itemBoxBorderLeftHighlightColor       |   string   |            ''           | update any hexcode for color, by default black         |
 | rightArrowVisibility                  |  boolean   |           false         | set flag to true to showcase right side image in item  |
 | rightSideIcon                         |   string   |            ''           | public url to showcase right side image                |
