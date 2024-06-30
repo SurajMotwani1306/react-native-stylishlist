@@ -30,6 +30,10 @@ export interface StylishListProps {
   dataList: StylishListItemProps[],
 }
 
+const returnImagePath = (path?:string) => {
+  return path ? path : "";
+}
+
 const StylishList = (props:StylishListProps) => {
   return (
     <View>
@@ -61,7 +65,7 @@ const StylishList = (props:StylishListProps) => {
                           <View style={styles.iconContainer}>
                             <Image
                               style={styles.leftImageIcon}
-                              source={require(data.leftImage || '')}
+                              source={require(returnImagePath(data.leftImage))}
                             />
                           </View>
                         </View>
@@ -99,7 +103,7 @@ const StylishList = (props:StylishListProps) => {
                     {props.rightArrowVisibility ? (
                       <View style={styles.rightArrow}>
                         <Image
-                          source={require(props.rightSideIcon || '')}
+                          source={require(returnImagePath(props.rightSideIcon))}
                         />
                       </View>
                     ) : null }

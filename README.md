@@ -103,7 +103,7 @@ const props = {
 | itemBoxBorderLeftHighlight            |  boolean   |           false         | highlight left border of the box for styling           |
 | itemBoxBorderLeftHighlightColor       |   string   |            ''           | update any hexcode for color, by default black         |
 | rightArrowVisibility                  |  boolean   |           false         | set flag to true to showcase right side image in item  |
-| rightSideIcon                         |   string   |            ''           | public url to showcase right side image                |
+| rightSideIcon                         |   string   |            ''           | asset path to showcase right side image                |
 | rightSideTextFlag                     |  boolean   |           false         | parent flag to showcase text/amount right side         |
 | leftImageBackgroundColor              |   string   |            ''           | bg color for image circle, '' will make it transparent |
 | itemDescription                       |   string   |            ''           | Description for items                                  |
