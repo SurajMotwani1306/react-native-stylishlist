@@ -26,7 +26,7 @@ export interface StylishListProps {
   itemBoxBorderLeftHighlightColor?: string,
   rightArrowVisibility?: boolean,
   rightSideTextFlag?: boolean,
-  rightSideIcon?: string,
+  rightSideIcon: string,
   dataList: StylishListItemProps[],
 }
 
@@ -65,7 +65,7 @@ const StylishList = (props:StylishListProps) => {
                           <View style={styles.iconContainer}>
                             <Image
                               style={styles.leftImageIcon}
-                              source={require(returnImagePath(data.leftImage))}
+                              source={require(data.leftImage)}
                             />
                           </View>
                         </View>
@@ -103,7 +103,7 @@ const StylishList = (props:StylishListProps) => {
                     {props.rightArrowVisibility ? (
                       <View style={styles.rightArrow}>
                         <Image
-                          source={require(returnImagePath(props.rightSideIcon))}
+                          source={require(props.rightSideIcon)}
                         />
                       </View>
                     ) : null }
