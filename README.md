@@ -44,7 +44,7 @@ const pressEventTrigger = (id : number, itemData: any) => {
 
 const dataList = [
   {
-    leftImageUrl: 'https://xyz.com/30017.png',
+    leftImage: './assets/user.png',
     leftImageBackgroundColor: '#00D8B1',
     itemTitle: 'General',
     itemDescription: 'Lorem ipsum dolor sit amet',
@@ -54,7 +54,7 @@ const dataList = [
     rightSideTextColor: 'blue'
   },
   {
-    leftImageUrl: 'https://xyz.com/30018.png',
+    leftImage: './assets/user.png',
     leftImageBackgroundColor: '#00D8B1',
     itemTitle: 'Privacy & security',
     itemDescription: 'Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet',
@@ -70,14 +70,14 @@ const props = {
   heading: 'Settings',
   headingColor: 'black',
   headingSize: 14,
-  leftImageUrlFlag: true,
+  leftImageFlag: true,
   belowLine: false,
   itemBoxBorder: true,
   itemBoxBorderLeftHighlight: false,
   itemBoxBorderLeftHighlightColor: 'blue',
   rightArrowVisibility: true,
   rightSideTextFlag: true,
-  rightSideIcon: 'https://xyz.com/30019.png',
+  rightSideIcon: './assets/arrow-right-icon.png',
   dataList: dataList,
 };
 ```
@@ -86,8 +86,8 @@ const props = {
 
 | Property/Method  |  Type   |  Default  | Description                                                             |
 | ---------------- | :-----: | :-------: | ----------------------------------------------------------------------- |
-| leftImageUrlFlag | boolean |   false   | Parent flag to showcase left side image                                 |
-| leftImageUrl     | string  |     ''    | Public url to showcase image in form of icon                            |
+| leftImageFlag    | boolean |   false   | Parent flag to showcase left side image                                 |
+| leftImage        | string  |     ''    | Public url to showcase image in form of icon                            |
 | itemTitle        | string  |     ''    | Title of the item                                                       |
 | onPress          | method  |    void   | Attach any method with arguments itemSequence & data to recieve values  |
 
@@ -103,7 +103,7 @@ const props = {
 | itemBoxBorderLeftHighlight            |  boolean   |           false         | highlight left border of the box for styling           |
 | itemBoxBorderLeftHighlightColor       |   string   |            ''           | update any hexcode for color, by default black         |
 | rightArrowVisibility                  |  boolean   |           false         | set flag to true to showcase right side image in item  |
-| rightSideIcon                         |   string   |            ''           | public url to showcase right side image                |
+| rightSideIcon                         |   string   |            ''           | asset path to showcase right side image                |
 | rightSideTextFlag                     |  boolean   |           false         | parent flag to showcase text/amount right side         |
 | leftImageBackgroundColor              |   string   |            ''           | bg color for image circle, '' will make it transparent |
 | itemDescription                       |   string   |            ''           | Description for items                                  |
