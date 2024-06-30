@@ -30,10 +30,6 @@ export interface StylishListProps {
   dataList: StylishListItemProps[],
 }
 
-const returnImagePath = (path?:string) => {
-  return path ? path : "";
-}
-
 const StylishList = (props:StylishListProps) => {
   return (
     <View>
