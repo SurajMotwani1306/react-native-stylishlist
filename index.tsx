@@ -61,7 +61,7 @@ const StylishList = (props:StylishListProps) => {
                           <View style={styles.iconContainer}>
                             <Image
                               style={styles.leftImageIcon}
-                              source={require(data.leftImage)}
+                              source={require('./assets/leftImage.png')}
                             />
                           </View>
                         </View>
@@ -99,7 +99,7 @@ const StylishList = (props:StylishListProps) => {
                     {props.rightArrowVisibility ? (
                       <View style={styles.rightArrow}>
                         <Image
-                          source={require(props.rightSideIcon)}
+                          source={require('./assets/rightSideIcon.png')}
                         />
                       </View>
                     ) : null }
