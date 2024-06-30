@@ -74,7 +74,7 @@ const StylishList = (props:StylishListProps) => {
                     <View style={styles.textContainer}>
                       <Text numberOfLines={1} style={styles.itemTitle}>{ data.itemTitle }</Text>
                       {data.itemDescription ? (<Text numberOfLines={1} ellipsizeMode="tail" style={styles.itemDescription}>{ data.itemDescription }</Text>) : null }
-                      {data.itemColorCircle ? (
+                      { (data.itemColorCircle &&  data.itemColorCircle.length > 0) ? (
                         <View style={styles.circleColorContainer}>
                             {
                               data.itemColorCircle.map((color, key) => (
