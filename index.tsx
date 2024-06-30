@@ -3,7 +3,7 @@ import React from 'react';
 import styles from './src/Stylesheet';
 
 interface StylishListItemProps {
-  leftImage: string,
+  leftImageUrl: string,
   leftImageBackgroundColor?: string,
   itemTitle: string,
   itemDescription?: string,
@@ -19,14 +19,14 @@ export interface StylishListProps {
   headingColor?: string,
   headingSize?: number,
   // checkboxContainsList: boolean,
-  leftImageFlag: boolean,
+  leftImageUrlFlag: boolean,
   belowLine?: boolean,
   itemBoxBorder?: boolean,
   itemBoxBorderLeftHighlight?: boolean,
   itemBoxBorderLeftHighlightColor?: string,
   rightArrowVisibility?: boolean,
   rightSideTextFlag?: boolean,
-  rightSideIcon: string,
+  rightSideIcon?: string,
   dataList: StylishListItemProps[],
 }
 
@@ -55,13 +55,15 @@ const StylishList = (props:StylishListProps) => {
                         null
                       )} */}
 
-                      {props.leftImageFlag ? (
+                      {props.leftImageUrlFlag ? (
                         // Left image with Circle
                         <View style={[styles.iconContainer, { backgroundColor: data.leftImageBackgroundColor }]}>
                           <View style={styles.iconContainer}>
                             <Image
                               style={styles.leftImageIcon}
-                              source={require('./assets/leftImage.png')}
+                              source={{
+                                uri: data.leftImageUrl
+                              }}
                             />
                           </View>
                         </View>
@@ -99,7 +101,9 @@ const StylishList = (props:StylishListProps) => {
                     {props.rightArrowVisibility ? (
                       <View style={styles.rightArrow}>
                         <Image
-                          source={require('./assets/rightSideIcon.png')}
+                          source={{
+                            uri: props.rightSideIcon
+                          }}
                         />
                       </View>
                     ) : null }
@@ -108,8 +112,8 @@ const StylishList = (props:StylishListProps) => {
 
                 {/* Horizontal Line */}
                 {/* When checkbox is there, uncomment first */}
-                {/* { props.belowLine ? <View style={[{flex: 1, height: 1, backgroundColor: '#B6B6B6', marginTop: -10, marginBottom: 15, marginRight:15, opacity: 0.5 }, props.checkboxContainsList || props.leftImageFlag ? { marginLeft: 55 } : { marginLeft: 10 }]} /> : null } */}
-                { props.belowLine ? <View style={[{flex: 1, height: 1, backgroundColor: '#B6B6B6', marginTop: -10, marginBottom: 15, marginRight:15, opacity: 0.5 }, props.leftImageFlag ? { marginLeft: 55 } : { marginLeft: 10 }]} /> : null }
+                {/* { props.belowLine ? <View style={[{flex: 1, height: 1, backgroundColor: '#B6B6B6', marginTop: -10, marginBottom: 15, marginRight:15, opacity: 0.5 }, props.checkboxContainsList || props.leftImageUrlFlag ? { marginLeft: 55 } : { marginLeft: 10 }]} /> : null } */}
+                { props.belowLine ? <View style={[{flex: 1, height: 1, backgroundColor: '#B6B6B6', marginTop: -10, marginBottom: 15, marginRight:15, opacity: 0.5 }, props.leftImageUrlFlag ? { marginLeft: 55 } : { marginLeft: 10 }]} /> : null }
               </View>
             )) }
           </View>
