@@ -1,7 +1,11 @@
 # react-native-stylishlist
 
 Styling of list in context of better UI with less efforts - Increases re-usability.
-Download App & test *react-native-stylishlist* in your device: https://drive.usercontent.google.com/download?id=1j_MChUcC-EZCoOVGe-rjlDyFLovoyKeI&export=download
+<br/>
+<div>
+  <span>Download App & test <b>react-native-stylishlist</b> in your device: <a href="https://drive.usercontent.google.com/download?id=1j_MChUcC-EZCoOVGe-rjlDyFLovoyKeI&export=download" target="_blank" alt="Download App">Download App</a></span>
+</div>
+<br/>
 
 <table>
   <tr>
