@@ -5,6 +5,7 @@ Styling of list in context of better UI with less efforts - Increases re-usabili
 <div>
   <span>Download App & test <b>react-native-stylishlist</b> in your device: <a href="https://drive.usercontent.google.com/download?id=1j_MChUcC-EZCoOVGe-rjlDyFLovoyKeI&export=download" target="_blank" alt="Download App">Download App</a></span>
 </div>
+<br/>
 
 <table>
   <tr>
