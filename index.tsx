@@ -101,6 +101,7 @@ const StylishList = (props:StylishListProps) => {
                     {props.rightArrowVisibility ? (
                       <View style={styles.rightArrow}>
                         <Image
+                          style={styles.rightImageIcon}
                           source={{
                             uri: props.rightSideIcon
                           }}
