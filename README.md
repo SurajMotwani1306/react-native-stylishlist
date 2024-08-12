@@ -1,4 +1,4 @@
-# react-native-stylishlist
+# React Native Stylishlist
 
 Styling of list in context of better UI with less efforts - Increases re-usability.
 <br/>

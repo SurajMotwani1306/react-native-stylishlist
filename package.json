@@ -1,10 +1,13 @@
 {
   "name": "react-native-stylishlist",
-  "version": "1.3.6",
+  "version": "1.4.1",
   "description": "Styling of list in context of better UI with less efforts",
+  "private": false,
   "main": "index.tsx",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "npm pack",
+    "publish": "npm publish react-native-stylishlist-1.4.1.tgz --access public"
   },
   "repository": {
     "type": "git",
@@ -12,6 +15,13 @@
   },
   "keywords": [
     "react-native-stylishlist",
+    "React Native Stylishlist",
+    "ReactNative Stylishlist",
+    "Reactnative Stylishlist",
+    "Native Stylishlist",
+    "Stylishlist",
+    "stylishlist",
+    "stylish list",
     "react-native",
     "react",
     "list",
